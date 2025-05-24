@@ -10,11 +10,13 @@
 void UWarriorAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& InInputTag)
 {
 	if (!InInputTag.IsValid()) {
-		return; 
+		return;
 	}
 
 	for (const FGameplayAbilitySpec& AbilitySpec : GetActivatableAbilities()) {
-		if (!AbilitySpec.GetDynamicSpecSourceTags().HasTagExact(InInputTag)) continue;
+		if (!AbilitySpec.GetDynamicSpecSourceTags().HasTagExact(InInputTag)) {
+			continue;
+		}
 
 		if (InInputTag.MatchesTag(WarriorGameplayTags::InputTag_Toggleable)) {
 			if (AbilitySpec.IsActive()) {
@@ -27,8 +29,6 @@ void UWarriorAbilitySystemComponent::OnAbilityInputPressed(const FGameplayTag& I
 		else {
 			TryActivateAbility(AbilitySpec.Handle);
 		}
-
-		TryActivateAbility(AbilitySpec.Handle);
 	}
 }
 

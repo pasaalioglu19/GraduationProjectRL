@@ -15,7 +15,10 @@ class GRADUATIONPROJECTT_API UWarriorAbilitySystemComponent : public UAbilitySys
 {
 	GENERATED_BODY()
 public:
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Ability")
 	void OnAbilityInputPressed(const FGameplayTag& InInputTag);
+
+	UFUNCTION(BlueprintCallable, Category = "Warrior|Ability")
 	void OnAbilityInputReleased(const FGameplayTag& InInputTag);
 
 	UFUNCTION(BlueprintCallable, Category = "Warrior|Ability", meta = (ApplyLevel = "1"))
