@@ -131,6 +131,8 @@ FActiveGameplayEffectHandle UWarriorGameplayAbility::NativeApplyEffectSpecHandle
 
 	check(TargetASC && InSpecHandle.IsValid());
 
+	UWarriorAbilitySystemComponent* MyASC = GetWarriorAbilitySystemComponentFromActorInfo();
+
 	return GetWarriorAbilitySystemComponentFromActorInfo()->ApplyGameplayEffectSpecToTarget(
 		*InSpecHandle.Data,
 		TargetASC

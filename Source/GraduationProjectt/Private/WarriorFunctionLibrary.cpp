@@ -8,6 +8,7 @@
 #include "GenericTeamAgentInterface.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "WarriorGameplayTags.h"
+#include "AbilitySystem/WarriorAttributeSet.h" // I added for reset attributes
 
 #include "WarriorDebugHelper.h"
 
@@ -129,3 +130,29 @@ bool UWarriorFunctionLibrary::IsValidBlock(AActor* InAttacker, AActor* InDefende
 
     return DotResult<-0.1f;
 }
+
+void UWarriorFunctionLibrary::ResetCharacterAttributes(UWarriorAbilitySystemComponent* WarriorASC)
+{
+    if (!WarriorASC)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("SetCurrentHealth: Invalid WarriorAbilitySystemComponent!"));
+        return;
+    }
+
+    const UWarriorAttributeSet* ConstAttrSet = Cast<const UWarriorAttributeSet>(WarriorASC->GetAttributeSet(UWarriorAttributeSet::StaticClass()));
+    if (!ConstAttrSet)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("SetCurrentHealth: WarriorAttributeSet not found!"));
+        return;
+    }
+
+    UWarriorAttributeSet* AttrSet = const_cast<UWarriorAttributeSet*>(ConstAttrSet);
+    if (!AttrSet)
+    {
+        UE_LOG(LogTemp, Warning, TEXT("SetCurrentHealth: Could not cast to non-const UWarriorAttributeSet!"));
+        return;
+    }
+
+    AttrSet->SetCurrentHealth(AttrSet->GetMaxHealth());
+}
+

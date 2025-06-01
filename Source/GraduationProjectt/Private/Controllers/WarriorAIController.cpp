@@ -76,6 +76,21 @@ void AWarriorAIController::OnEnemyPerceptionUpdated(AActor* Actor, FAIStimulus S
 	//	return;
 	//}
 
+	if (!Actor) return;
+
+	// AI ile hedef arasýndaki konum farkýný hesapla
+	const FVector AI_Location = GetPawn() ? GetPawn()->GetActorLocation() : FVector::ZeroVector;
+	const FVector Target_Location = Actor->GetActorLocation();
+
+	const float ZDiff = FMath::Abs(AI_Location.Z - Target_Location.Z);
+
+	// Eðer Z farký çok fazlaysa, görmezden gel
+	if (ZDiff > 500)
+	{
+		EnemyPerceptionComponent->ForgetActor(Actor);
+		return;
+	}
+
 	if (UBlackboardComponent* BlackboardComponent = GetBlackboardComponent()) {
 		if(!BlackboardComponent->GetValueAsObject(FName("TargetActor"))){
 			if (Stimulus.WasSuccessfullySensed() && Actor) {

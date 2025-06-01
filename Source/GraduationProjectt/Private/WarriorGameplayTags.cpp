@@ -53,6 +53,9 @@ namespace WarriorGameplayTags {
 	UE_DEFINE_GAMEPLAY_TAG(Player_SetByCaller_AttackType_Heavy, "Player.SetByCaller.AttackType.Heavy");
 
 	/** Enemy tags**/
+	UE_DEFINE_GAMEPLAY_TAG(Enemy_Ability_Attack1, "Enemy.Ability.Attack1");
+	UE_DEFINE_GAMEPLAY_TAG(Enemy_Ability_Attack2, "Enemy.Ability.Attack2");
+	UE_DEFINE_GAMEPLAY_TAG(Enemy_Ability_Attack3, "Enemy.Ability.Attack3");
 	UE_DEFINE_GAMEPLAY_TAG(Enemy_Ability_Melee, "Enemy.Ability.Melee");
 	UE_DEFINE_GAMEPLAY_TAG(Enemy_Ability_Ranged, "Enemy.Ability.Ranged");
 	UE_DEFINE_GAMEPLAY_TAG(Enemy_Ability_SummonEnemies, "Enemy.Ability.SummonEnemies");
