@@ -9,3 +9,7 @@ Traditional AI systems in games are often predictable and repetitive. This proje
 - Aiming to push the boundaries of traditional game AI with RL-powered behavior.
 
 While RL offers great potential for enhancing game AI, it also comes with challenges such as the need for significant computing power and ensuring balanced difficulty. The final goal is to create a functional game prototype with at least one adaptive boss character.
+
+## Screenshot
+
+![In-Game Screenshot](Screenshot%20in%20game.png)
