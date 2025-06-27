@@ -1,29 +1,11 @@
- This project aims to develop a single-player action game that combines artificial in
-telligence techniques with modern game development technologies. The main idea of
- the project is to create advanced boss characters that can adapt to the player’s actions
- and strategies using reinforcement learning (RL) algorithms. With RL integration,
- the boss characters will learn to fight better after each encounter with the player and
- dynamically adjust their behavior. This will provide players with a more competitive
- and enjoyable gaming experience.
- The game will be developed using Unreal Engine. This game development platform
- offers advanced tools to create visually impressive environments and design complex
- game mechanics. Reinforcement learning algorithms will allow the boss characters to
- analyze player behavior in real time and respond with more effective strategies. This
- approach aims to go beyond traditional AI systems and provide a more engaging and
- personalized gaming experience.
- One of the main goals of the project is to ensure a smooth and balanced interaction
- between the player and the AI-controlled bosses. This includes designing the behavior
- of the bosses to provide an appropriate level of challenge without being too predictable
- or too difficult. By using reinforcement learning, the player’s decisions and fighting
- style will play a central role in the game’s difficulty and progression.
- The project also comes with certain challenges. Training RL models can require a
- lot of computing power and time, especially considering game development deadlines
- and hardware limitations. Additionally, balancing the adaptability of the bosses to
- make them challenging but not impossible to beat is a complex task. Despite these
- challenges, the project aims to deliver a fully playable prototype with at least one
- adaptive boss character, supported by a dynamic game environment.
- This project not only aims to show the potential of reinforcement learning in modern
- game design but also demonstrates how adaptive and intelligent AI behaviors can
- improve the player experience. By strengthening the connection between academic
- research in artificial intelligence and game development practices, this project aims to
- contribute both to the AI field and to the world of interactive entertainment.
+# Project Overview
+This project focuses on designing a single-player action game featuring AI-controlled boss characters that use reinforcement learning (RL) to adapt to player strategies. The goal is to create dynamic and challenging encounters by allowing the bosses to learn from player actions, ensuring each battle feels unique and exciting.
+
+Traditional AI systems in games are often predictable and repetitive. This project aims to solve that by using RL, enabling the bosses to adjust their behavior based on the player's actions, providing a more engaging gameplay experience. The game is developed using Unreal Engine, with basic RL algorithms implemented for initial testing and more advanced methods to be added as the project progresses.
+
+## Key Features:
+- Adaptive boss characters that evolve their strategies based on player actions.
+- Development using Unreal Engine for immersive gameplay.
+- Aiming to push the boundaries of traditional game AI with RL-powered behavior.
+
+While RL offers great potential for enhancing game AI, it also comes with challenges such as the need for significant computing power and ensuring balanced difficulty. The final goal is to create a functional game prototype with at least one adaptive boss character.
