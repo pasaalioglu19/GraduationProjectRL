@@ -10,6 +10,6 @@ Traditional AI systems in games are often predictable and repetitive. This proje
 
 While RL offers great potential for enhancing game AI, it also comes with challenges such as the need for significant computing power and ensuring balanced difficulty. The final goal is to create a functional game prototype with at least one adaptive boss character.
 
-## Screenshot
+## In-game View
 
 ![image_alt](https://github.com/pasaalioglu19/GraduationProjectRL/blob/366188226392c31c2d47565700df32378d6f2828/Screenshot%20in%20game.png)
