@@ -12,4 +12,4 @@ While RL offers great potential for enhancing game AI, it also comes with challe
 
 ## Screenshot
 
-![In-Game Screenshot](Screenshot%20in%20game.png)
+![image_alt](https://github.com/pasaalioglu19/GraduationProjectRL/blob/366188226392c31c2d47565700df32378d6f2828/Screenshot%20in%20game.png)
